@@ -1,0 +1,28 @@
+syntax = "proto2";
+
+package keeproto;
+
+message KString {
+  required string value = 1;
+}
+
+message KInt {
+    required int32 value = 1;
+}
+
+message KFloat {
+    required float value = 1;
+}
+
+
+message KStringList {
+    repeated KString values = 1;
+}
+
+message KIntList {
+    repeated KInt values = 1;
+}
+
+message KFloatList {
+    repeated KFloat values = 1;
+}
